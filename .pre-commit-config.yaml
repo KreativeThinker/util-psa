@@ -1,19 +1,27 @@
 repos:
-  - repo: https://github.com/pycqa/isort
-    rev: 6.0.1
-    hooks:
-      - id: isort
-        name: isort
-        args: ["--profile", "black"]
-
-  - repo: https://github.com/psf/black
-    rev: 25.1.0
-    hooks:
-      - id: black
-        name: black
-
-  - repo: https://github.com/PyCQA/flake8
-    rev: 7.2.0
-    hooks:
-      - id: flake8
-        args: ["--exclude=venv,.venv,__pycache__,.git"]
+- hooks:
+  - args:
+    - --profile
+    - black
+    id: isort
+    name: isort
+  repo: https://github.com/pycqa/isort
+  rev: 6.0.1
+- hooks:
+  - id: black
+    name: black
+  repo: https://github.com/psf/black
+  rev: 25.1.0
+- hooks:
+  - args:
+    - --exclude=venv,.venv,__pycache__,.git
+    id: flake8
+  repo: https://github.com/PyCQA/flake8
+  rev: 7.2.0
+- hooks:
+  - id: commitizen
+  - id: commitizen-branch
+    stages:
+    - push
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v4.8.2
