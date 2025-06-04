@@ -1,14 +1,25 @@
-# 🧠 PSafft
+# 🧠 util-psa
 
 Spectral chunk-based analysis of rat EEG data during REM and NREM sleep.
 
-## 📁 Data Structure
+## Project Structure
 
 ```
-data/
-├── raw/                # Raw input data from recordings
-├── input/              # Cleaned + transposed cFFT files
-└── output/             # Final analysis results
+util-psa/
+├── config.py               # configuration file for the project
+├── data/                   # Data folder
+│   ├── raw/                # Raw input data from recordings
+│   ├── input/              # Cleaned + transposed cFFT files
+│   └── output/             # Final analysis results
+├── LICENSE
+├── main.py
+├── pyproject.toml
+├── README.md
+├── src/                    # Source code for the project
+│   └── files/
+│       ├── include.py
+│       └── __init__.py
+└── uv.lock
 ```
 
 ## 🧪 Workflow
