@@ -46,6 +46,6 @@ data/
 7. **Normalize**
 
    - Normalize per-frequency
-   - Then normalize w\.r.t BL1
+   - Then normalize w.r.t BL1
    - Save to:
      `data/output/{animal}/{rem|nrem}/chunked/{chunk_num}_norm`
