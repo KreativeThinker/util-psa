@@ -1,0 +1,7 @@
+data_dir: ./data
+raw_data_dir: ./data/raw
+input_dir: ./data/input
+output_dir: ./data/output
+number_of_animals: 7
+verbose: true
+time_chunks: 3600
